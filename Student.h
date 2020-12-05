@@ -1,4 +1,9 @@
 //Student.h
+//Patrick Polcuch
+//2348668
+//CPSC350Assignment5
+
+//My .h file for Student.cpp
 #include <iomanip>
 #include <iostream>
 

@@ -1,5 +1,9 @@
 //to test my BST
+//Patrick Polcuch
+//2348668
+//CPSC350Assignment5
 
+//Its the main method  ~wow~
 #include "BST.h"
 #include "Student.h"
 #include "Faculty.h"
@@ -240,18 +244,11 @@ int main(int argc,char** argv){
         doublegpa>>gpa;
 
         int Aidnum;
-        while(true){
-          cout<<"What is the ID number of the student's advisor?"<<endl;
-          string AidnumS;
-          cin>>AidnumS;
-          stringstream intAidnum(AidnumS);
-          intAidnum>>Aidnum;
-
-          if(masterFaculty->searchNode(Aidnum)){
-            break;
-          }
-          cout<<"Faculty member does not exits, choose a valid ID number."<<endl;
-        }
+        cout<<"What is the ID number of the student's advisor?"<<endl;
+        string AidnumS;
+        cin>>AidnumS;
+        stringstream intAidnum(AidnumS);
+        intAidnum>>Aidnum;
 
 
         Student *current = new Student(idnum, name, grade, major, gpa, Aidnum);
@@ -261,6 +258,10 @@ int main(int argc,char** argv){
         string user ="";
         cin>>user;
         if(user.compare("Yes")==0){
+          if(masterFaculty->searchNode(Aidnum)){
+            cout<<"Faculty member does not exits"<<endl;
+            break;
+          }
           Faculty *current = masterFaculty->returnNode(Aidnum);
           current->addAdvisee(idnum);
           cout<<"Done"<<endl;
@@ -323,7 +324,6 @@ int main(int argc,char** argv){
         cin>>department;
 
         Faculty *person = new Faculty(idnum, name, level, department);
-        cout<<"check1"<<endl;
         person->addAdvisee(23);
         masterFaculty->insertNode(person);
 

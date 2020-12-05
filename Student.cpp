@@ -1,5 +1,9 @@
 //Student.cpp
+//Patrick Polcuch
+//2348668
+//CPSC350Assignment5
 
+//Allows for the creation of Student objects
 #include "Student.h"
 
 Student::Student(int id, string n, string y, string m, double g, int a){

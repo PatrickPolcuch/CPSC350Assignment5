@@ -1,4 +1,9 @@
 //Faculty.cpp
+//Patrick Polcuch
+//2348668
+//CPSC350Assignment5
+
+//Allows for the creation of Faculty objects 
 
 #include "Faculty.h"
 

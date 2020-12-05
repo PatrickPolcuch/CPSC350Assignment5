@@ -1,4 +1,9 @@
 //BST.h
+//Patrick Polcuch
+//2348668
+//CPSC350Assignment5
+
+//A modified version of the BST I made in my data structures class
 #include <iostream>
 #include <cstddef>//have to use this to use NULL
 
@@ -39,7 +44,6 @@ class BST{
 
     void insertNode(type *v){
       TreeNode<type> *node = new TreeNode<type>(v);
-
       if(isEmpty()){
         //Empty Tree
         root = node;

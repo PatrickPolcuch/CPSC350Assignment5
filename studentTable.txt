@@ -1,0 +1,12 @@
+23
+Mark
+Senior
+Pre-med
+3.9
+23
+24
+Karl
+Sophomore
+Computer Science
+4.0
+25
